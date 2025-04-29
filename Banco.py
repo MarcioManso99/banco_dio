@@ -23,7 +23,7 @@ while True:
             print('Deposito corfimado!')
         else:
             print('valor invalido!')
-    if opc == 2:
+    elif opc == 2:
         print(f'Saldo atual é de {saldo:.2f}R$')
         saque = float(input('Qual o valor do saque?:'))
 
@@ -38,7 +38,7 @@ while True:
             saqueQ += 1
             saques.append(saque)
             print('Saque realizado com sucesso')
-    if opc == 3:
+    elif opc == 3:
         print('\n ---EXTRATO---')
         if not saques:
             print('Nenhum saque realizado.')
